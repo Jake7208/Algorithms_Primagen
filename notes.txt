@@ -1,0 +1,11 @@
+Another Big O trick 
+if the input halves at each step, it's either O(LogN) or O(NlogN)
+look at a value divide it in half
+
+The Two crystal ball problem
+
+Given two crystal balls that will break if dropped from a high enough 
+distance, determine the exact spot in which it will break in the most
+optimized way
+
+Linear and binary searching?
