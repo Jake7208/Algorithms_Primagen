@@ -9,3 +9,64 @@ distance, determine the exact spot in which it will break in the most
 optimized way
 
 Linear and binary searching?
+
+Sort 
+
+The bubble sort?
+after doing a bubble sort 1 time it will always produce the largest item at the last spot
+
+you will drop insignificant values
+
+Recursion
+
+Sorting strategies 
+
+
+
+What sucks about arrays??
+deletion: you can't delete you can zero out
+insertion: you can't really insert you can write
+it's ungrowable: you can't grow an array
+
+
+1st real data structure? 
+linked list how it works? node that contains a value and a reference to another value/node.
+
+singly linked list: you can't walk backwards if you don't have a reference to whats behind you it's gone! (the data gone aka dead)
+
+doubly linked list: normally have a additional property adding bi-directional arrows. (often called a container) needs ability to store values from linked list.
+
+time / space complexity
+ a. prepend/ append
+ b. insertion in  the middle
+ c. deletion from ends
+ d. deletion from middle
+ e. Get head/tail
+ f. get in general
+
+api
+
+kata-machine api before programmed 
+
+interface LinkedList<T> {
+    get length(): number;
+    insertAt(item: T, index: number): void;
+    remove(item: T): T | undefined;
+    removeAt(index: number): T | undefined;
+    append(item: T): void;
+    prepend(item: T): void;
+    get(index: number): T | undefined;
+}
+
+Every linked is a graph or a tree most fundamental unit.( must understand to do algorithm )
+
+first data structure on top of linked list: is a queue!
+
+1st in 1st out queue
+
+running time
+enqueue
+dequeue
+peek or your head.value
+
+you only add or remove from the head
