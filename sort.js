@@ -16,7 +16,7 @@
 // }
 
 // * something went wrong in this problem
-//! Queue problem something is wrong
+//?  Queue fixed no problems
 // type Node<T> = {
 //     value: T;
 //     next?: Node<T>;
@@ -51,13 +51,21 @@
 //         const head = this.head;
 //         this.head = this.head.next;
 
-//     *    //free not needed but if you're not using js
-//    *     // head.next = undefined;
+//         //free not needed but if you're not using js
+//         // head.next = undefined;
+
+//         if (this.length === 0) {
+//             this.tail = undefined;
+//         }
 
 //         return head?.value;
 //     }
 //     peek(): T | undefined {
 //         return this.head?.value; // if head is defined return it else undefined
+//     }
+
+//     getTail() {
+//         return this.tail?.value;
 //     }
 // }
 
