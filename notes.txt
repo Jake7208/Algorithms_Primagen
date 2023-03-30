@@ -88,3 +88,19 @@ Can we have an array access with the ability to grow.
 
 what data structure is a = []
 
+Recursion is hard 
+example of Recursion
+
+function foo(n: number): number {
+    // base case
+    if (n == 1) {
+        return 1;
+    }
+
+    // We shall recurse!
+    return n + foo(n - 1);
+}
+
+Know your base case if you understand base case it's easy
+
+implement recursion
