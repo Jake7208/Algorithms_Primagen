@@ -111,7 +111,7 @@
 //     }
 // }
 
-// ! error with doubly linked list
+// * fixed doubly linked list
 
 // type Node<T> = {
 //     value: T;
@@ -142,10 +142,12 @@
 //         this.head.prev = node;
 //         this.head = node;
 //     }
+
 //     insertAt(item: T, idx: number): void {
 //         if (idx > this.length) {
 //             throw new Error("oh no");
 //         }
+
 //         if (idx === this.length) {
 //             this.prepend(item);
 //             return;
@@ -180,8 +182,10 @@
 
 //         this.tail = node;
 //     }
+
 //     remove(item: T): T | undefined {
 //         let curr = this.head;
+
 //         for (let i = 0; curr && i < this.length; ++i) {
 //             if (curr.value === item) {
 //                 break;
@@ -214,10 +218,10 @@
 //             return out;
 //         }
 //         if (node.prev) {
-//             node.prev = node.next;
+//             node.prev.next = node.next;
 //         }
 //         if (node.next) {
-//             node.next = node.prev;
+//             node.next.prev = node.prev;
 //         }
 //         if (node === this.head) {
 //             this.head = node.next;
