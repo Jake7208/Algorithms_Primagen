@@ -106,3 +106,5 @@ Know your base case if you understand base case it's easy
 implement recursion
 
 all programming eventually leads to trees.
+
+Where are trees?

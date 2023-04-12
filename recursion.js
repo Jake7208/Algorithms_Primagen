@@ -80,3 +80,68 @@
 
 //     return path;
 // }
+
+// trees
+
+//* in order search
+
+// function walk(curr: BinaryNode<number> | null, path: number[]): number[] {
+//     if (!curr) {
+//         return path;
+//     }
+
+//     // recurse
+//     // pre
+//     // recurse
+//     walk(curr.left, path);
+//     path.push(curr.value);
+//     walk(curr.right, path);
+
+//     // post
+//     return path;
+// }
+// export default function in_order_search(head: BinaryNode<number>): number[] {
+//     return walk(head, []);
+// }
+
+//* Pre order trees
+
+// function walk(curr: BinaryNode<number> | null, path: number[]): number[] {
+//     if (!curr) {
+//         return path;
+//     }
+
+//     // recurse
+//     // pre
+//     // recurse
+//     path.push(curr.value);
+//     walk(curr.left, path);
+//     walk(curr.right, path);
+
+//     // post
+//     return path;
+// }
+// export default function pre_order_search(head: BinaryNode<number>): number[] {
+//     return walk(head, []);
+// }
+
+// *post orders
+
+// function walk(curr: BinaryNode<number> | null, path: number[]): number[] {
+//     if (!curr) {
+//         return path;
+//     }
+
+//     // recurse
+//     // pre
+//     // recurse
+//     walk(curr.left, path);
+//     walk(curr.right, path);
+
+//     // post
+//     path.push(curr.value);
+//     return path;
+// }
+// export default function post_order_search(head: BinaryNode<number>): number[] {
+//     return walk(head, []);
+// }
