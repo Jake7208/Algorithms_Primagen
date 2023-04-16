@@ -108,3 +108,5 @@ implement recursion
 all programming eventually leads to trees.
 
 Where are trees?
+
+Binary search tree BST 
