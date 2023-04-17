@@ -110,3 +110,82 @@ all programming eventually leads to trees.
 Where are trees?
 
 Binary search tree BST 
+
+the heap data structure
+
+the simplest6 way to put it is a binary tree where every child and grand child is smaller (maxHeap), or larger (minHeap) Than current node.
+
+
+MinHeap Means root is larger than the current node
+
+Max heap meaning that the smallest value is the root and gets larger than the previous child
+
+every node below said node is smaller than or = to current node.
+
+A heap is normally a full or complete tree meaning there is no empty space.
+
+every node is always filled in from the left to the right is always complete.
+
+heaps are self balancing and also the easiest to get wrong! so be careful when implenting a heap
+
+The most bestest data structure? graphs
+graphs
+
+a graph is a series of nodes with a large amounts of connections
+
+adj, list and matrix work the same as trees when it comes to bfs and Depth first search
+
+dijkstra's shortest path
+
+path requires a previous path.
+
+started off as a v squared running time
+
+prev = [-1...] 
+seen = [f....]
+distance = [infinity..... 0]
+put zero where ever source is
+
+it works by getting the nearest unseen node, so source array
+
+the smallest unseen item
+
+while has Unvisited() {
+    lo = getLowestUnseen()
+    seen[lo] = true
+
+    for edge in lo {
+        if seen [edge] continue
+        // meaning haven't seen this node continue 
+        dist = dist[lo] + edge.weight
+        if dist < dist[edge] {
+            prev [edge] = lo
+            dist[edge] = dist
+
+        }
+    }
+}
+
+constantly finds the lowest/shortest path
+
+
+running time for dijkstras is odd
+O(logV(V+E))
+
+Maps are just array lists
+
+Map consistant hash
+
+K => V 
+
+smaller load factor with more storage back in the primagens day
+
+hashing function 
+hash(key) => number {
+
+}
+
+ideal load factor is .7 after load factor is exceeded need to be rehash and re store them
+
+LRU
+Least recently used item
